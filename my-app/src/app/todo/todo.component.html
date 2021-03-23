@@ -1,0 +1,16 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-subtitle>Todo {{ todo.id }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field class="example-form-field">
+      <input matInput type="text" [(ngModel)]="todo.text" name="text" />
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button *ngIf="todo.state !== 'done'" (click)="setStateToDone()">
+      Done
+    </button>
+    <button mat-button (click)="deleteTodo()">Delete</button>
+  </mat-card-actions>
+</mat-card>

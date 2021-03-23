@@ -1,0 +1,10 @@
+.card {
+  display: grid;
+  place-items: center;
+  margin: 2em;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  max-width: fit-content;
+}
