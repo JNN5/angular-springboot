@@ -43,3 +43,8 @@ hs_err_pid*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/todo/target/
+/todo/.mvn/
+*mvnw
+*mvnw.cmd
