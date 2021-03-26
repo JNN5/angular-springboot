@@ -2,10 +2,7 @@ package io.twodigits.todo.service;
 
 import java.util.Optional;
 
-import com.amazonaws.services.dynamodbv2.document.Page;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.stereotype.Service;
 
 import io.twodigits.todo.model.TodoDynamoDb;

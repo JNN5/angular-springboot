@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class TodoApplicationTests {
 
 	@Test
+	@SuppressWarnings("squid:S2699") // We don't need an assertion here.
 	void contextLoads() {
 	}
 

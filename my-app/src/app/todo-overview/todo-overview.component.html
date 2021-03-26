@@ -1,8 +1,10 @@
 <h2>Todos</h2>
 <div class="grid">
-  <app-todo
-    *ngFor="let todo of todos"
-    [todo]="todo"
-    (todoEvent)="handleEvent($event, todo)"
-  ></app-todo>
+  <div *ngIf="todos$ | async as todos">
+    <app-todo
+      *ngFor="let todo of todos"
+      [todo]="todo"
+      (todoEvent)="handleEvent($event, todo)"
+    ></app-todo>
+  </div>
 </div>

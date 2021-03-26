@@ -16,7 +16,18 @@ public class TodoDynamoDb {
   public TodoDynamoDb() {
   }
 
+  public TodoDynamoDb(String text) {
+    this.text = text;
+    this.done = false;
+  }
+
   public TodoDynamoDb(String text, Boolean done) {
+    this.text = text;
+    this.done = done;
+  }
+
+  public TodoDynamoDb(String id, String text, Boolean done) {
+    this.id = id;
     this.text = text;
     this.done = done;
   }
